@@ -27,21 +27,21 @@ A simple Flask web application that allows users to input a YouTube video URL, d
 Set up a virtual environment (optional but recommended):
 
 bash
-نسخ
-تحرير
+
+
 python -m venv venv
 source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
 Install required dependencies:
 
 bash
-نسخ
-تحرير
+
+
 pip install -r requirements.txt
 Run the application:
 
 bash
-نسخ
-تحرير
+
+
 python app.py
 This will start a development server. You can visit http://127.0.0.1:5000/ in your browser to access the application.
 
@@ -54,8 +54,8 @@ Click "Summarize": After the video is processed, you will see the summary of the
 
 Project Structure
 php
-نسخ
-تحرير
+
+
 youtube-summarizer/
 │
 ├── app.py                # Main Flask application
@@ -86,8 +86,8 @@ Flask: For the web framework.
 Bootstrap: For responsive design.
 
 markdown
-نسخ
-تحرير
+
+
 
 ### Key Sections:
 - **Project Features**: Lists the main features and what the application does.
