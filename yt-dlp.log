@@ -1,0 +1,127 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 02:53:06] "GET / HTTP/1.1" 200 -
+ERROR:root:Error: [0;31mERROR:[0m Postprocessing: ffprobe and ffmpeg not found. Please install or provide the path using --ffmpeg-location
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 02:53:21] "[35m[1mPOST /summarize HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:12:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:15:28] "POST /summarize HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\DELL\\OneDrive\\Desktop\\ALI\\youtube-summarizer\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:19:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:20:41] "POST /summarize HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5396
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5406
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:23:10] "GET / HTTP/1.1" 200 -
+ERROR:root:Error: index out of range in self
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:24:33] "[35m[1mPOST /summarize HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5406
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5415
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:26:13] "GET / HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 03:28:01] "POST /summarize HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5406
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/model.safetensors HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6 HTTP/1.1" 200 5396
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/main HTTP/1.1" 200 6683
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/a4f8f3e/generation_config.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/discussions?p=0 HTTP/1.1" 200 13161
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 322-170-826
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/sshleifer/distilbart-cnn-12-6/commits/refs%2Fpr%2F22 HTTP/1.1" 200 7648
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 05:16:38] "GET / HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors.index.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /sshleifer/distilbart-cnn-12-6/resolve/refs%2Fpr%2F22/model.safetensors HTTP/1.1" 302 0
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 05:18:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 05:20:45] "POST /summarize HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 05:21:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2025 05:23:37] "POST /summarize HTTP/1.1" 200 -

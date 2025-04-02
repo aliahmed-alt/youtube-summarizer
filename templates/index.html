@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        input[type="url"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 18%;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        .summary-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        footer a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading Spinner Style */
+        .spinner {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #5cb85c; /* Green */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+            display: none; /* Hidden by default */
+        }
+
+        /* Spinner animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Summarizer</h1>
+        <form id="summarizeForm">
+            <label for="videoUrl">Enter YouTube Video URL:</label>
+            <input type="url" id="videoUrl" name="videoUrl" placeholder="https://youtube.com/..." required>
+            <button type="submit">Summarize</button>
+            <button type="button" id="pasteButton">Paste</button>
+        </form>
+
+        <!-- Spinner (hidden initially) -->
+        <div id="loadingSpinner" class="spinner"></div>
+
+        <div id="summaryContainer" class="summary-box" style="display: none;">
+            <h2>Summary</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <a href="https://github.com/aliahmed-alt" target="_blank">GitBekho</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('summarizeForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const videoUrl = document.getElementById('videoUrl').value;
+
+            // Show the loading spinner
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('summaryContainer').style.display = 'none';
+
+            const response = await fetch('/summarize', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ video_url: videoUrl }),
+            });
+
+            const result = await response.json();
+
+            // Hide the loading spinner and show the summary
+            document.getElementById('loadingSpinner').style.display = 'none';
+
+            if (result.summary) {
+                document.getElementById('summaryContainer').style.display = 'block';
+                document.getElementById('summaryText').textContent = result.summary;
+            } else {
+                alert('Error: ' + result.error);
+            }
+        });
+
+        // Paste the URL from clipboard when the paste button is clicked
+        document.getElementById('pasteButton').addEventListener('click', async function() {
+            try {
+                const text = await navigator.clipboard.readText();
+                document.getElementById('videoUrl').value = text;
+            } catch (err) {
+                alert('Failed to read clipboard contents: ' + err);
+            }
+        });
+    </script>
+</body>
+</html>
